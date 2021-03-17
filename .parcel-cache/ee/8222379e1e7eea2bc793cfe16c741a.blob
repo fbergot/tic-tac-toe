@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jeu du Morpion (menu)</title>
+    <link rel="shortcut icon" href="/favicon.HASH_REF_76def99432530c145a173391305fc377.png" type="image/x-icon">
+    <link rel="stylesheet" href="/index.HASH_REF_7a4862cf6eab594d983ed71360b7b998.css">
+    <script src="/index.HASH_REF_b64f573f0fe9b48d0c610b2ede462cf4.js" defer=""></script>
+</head>
+<body>
+    <div class="div_content">
+        <div class="menu">
+            <div>
+                <h1 class="title_menu">My Morpion ... </h1>
+            </div>
+            <p class="text_option">Choisissez qui commence : 
+                
+                    <label for="p1">Player 1</label>
+                    <input class="play1" type="radio" id="p1" name="choiceBegin" value="p1">
+                
+               
+                    <label for="p2">player2</label>
+                    <input class="play2" checked="" type="radio" id="p2" name="choiceBegin" value="p2">
+               
+            </p>
+            <div class="div_choice_content">
+                <div class="all_content1">
+                    <p class="player1">Ordinateur (Player 1) :</p>
+                    <div class="content_div_img1">
+                        <div>
+                            <label for="img1"><img class="img1" src="/manette.HASH_REF_0a59ff466cc027212b8060e843a92e6f.png"></label><br>
+                            <input class="input1" type="radio" id="img1" name="img_player1" value="img1">
+                        </div>
+                        <div>
+                            <label for="img2"><img class="img2" src="/true.HASH_REF_8b7f40dd5c953c21cabf247abb3ed274.png"></label><br>
+                            <input class="input2" type="radio" id="img2" name="img_player1" value="img2">
+                        </div>
+                        <div>
+                            <label for="img3"><img class="img3" src="/mort.HASH_REF_763b22b4a1b6484e14de6b7d4b2d3fba.png"></label><br>
+                            <input class="input3" type="radio" id="img3" name="img_player1" value="img3">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="all_content2">
+                    <p class="player2">Vous (Player 2) :</p>
+                    <div class="content_div_img2">
+                        <div>
+                            <label for="img1"><img class="img4" src="/carre.HASH_REF_18d8d581d74c976639066f524bbf5d7a.png"></label><br>
+                            <input class="input4" type="radio" id="img1" name="img_player2" value="img4">
+                        </div>
+                        <div>
+                            <label for="img2"><img class="img5" src="/false.HASH_REF_c3a89dd1f65d3d30bc348a0bb9b5cc74.png"></label><br>
+                            <input class="input5" type="radio" id="img2" name="img_player2" value="img5">
+                        </div>
+                        <div>
+                            <label for="img3"><img class="img6" src="/child.HASH_REF_9425b9df01bacdf6a49b1e9c6d62a072.png"></label><br>
+                            <input class="input6" type="radio" id="img3" name="img_player2" value="img6">
+                        </div>
+                    </div>
+                </div>
+                <div class="content_but">
+                    <button type="button" id="but_commit">Valider</button>
+                </div>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>

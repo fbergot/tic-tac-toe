@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jeu du Morpion (jeu)</title>
+    <link rel="shortcut icon" href="e29f1ea9e0ec5b217e5504344f84e61f" type="image/x-icon">
+    <link rel="stylesheet" href="3fc5b66131865c59b17dcb24456e9ed9">
+    <script src="0314456676feb790b183dcf4f96aa6a0" defer=""></script>
+</head>
+<body id="body">
+        <div class="content">
+            <canvas id="canvas"></canvas><br>
+            <div>
+                <button class="option_button" type="button" id="options">Retourner au menu</button>
+                <button class="option_button" type="button" id="reload">Rejouer</button>
+            </div>
+        </div>   
+</body>
+</html>

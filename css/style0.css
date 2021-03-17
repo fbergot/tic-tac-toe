@@ -1,0 +1,127 @@
+html , body {
+    --height_img : 50px;
+    --dec : -13px;
+    --dec_top : 15px;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.div_content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/téléchargement11.png');
+}
+
+.menu {
+    width: 50%;
+    height: 50%;
+    border: 1px solid grey;
+    min-height: 420px;
+    z-index: 2;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.title_menu {
+    text-align: center;
+    font-family: cursive;
+}
+
+.player1 , .player2 {
+    text-align: center;
+}
+.div_choice_content {
+    width: 100%;
+    height: auto;
+    min-height: 320px;
+}
+
+.content_div_img1 {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.all_content1 {
+    margin-top: 30px;
+}
+
+.all_content2 {
+    margin-top: 30px;
+}
+
+.content_div_img2 {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.img1 , .img2 , .img3 , .img4 , .img5 , .img6 {
+    width: var(--height_img);
+    height: var(--height_img);
+    margin-left: var(--dec);
+}
+
+.input1 , .input2 , .input3 , .input4 , .input5 , .input6 {
+        margin-top: var(--dec_top);
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+.text_option {
+    text-align: center;
+    margin-left: 5px;
+    font-family: cursive;
+}
+
+.text_option div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+input:hover {
+   border: 1px solid black;
+}
+
+.content_but {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.content_but button {
+    padding: 10px;
+    z-index : 3;
+    cursor: pointer;
+    background-color: rgb(16, 21, 70);
+    color: white;
+    font-size: 17px;
+    border: 3px solid white;
+}
+
+.content_but button:hover {
+    background-color: rgba(176, 230, 247, 0.864);
+    color: rgb(36, 34, 34);
+    transition: color 0.5s;
+    transition: background-color 0.8s;
+}
+
+@media(min-height: 848px) {
+    .content_but button {
+    margin-top: 35px;
+    padding: 10px;
+    z-index : 3;
+    cursor: pointer;
+    background-color: rgb(16, 21, 70);
+    color: white;
+    font-size: 17px;
+}
+} 

@@ -1,0 +1,36 @@
+var _params_and_initCanvasJs = require('./params_and_init/Canvas.js');
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+var _params_and_initCanvasJsDefault = _parcelHelpers.interopDefault(_params_and_initCanvasJs);
+var _params_and_initUtilitaryJs = require("./params_and_init/Utilitary.js");
+var _params_and_initUtilitaryJsDefault = _parcelHelpers.interopDefault(_params_and_initUtilitaryJs);
+var _params_and_initGameJs = require('./params_and_init/Game.js');
+var _params_and_initGameJsDefault = _parcelHelpers.interopDefault(_params_and_initGameJs);
+var _params_and_initGetItemJs = require('./params_and_init/GetItem.js');
+var _params_and_initGetItemJsDefault = _parcelHelpers.interopDefault(_params_and_initGetItemJs);
+const urls = ["index.html", "game.html"];
+// init canvas :
+const canvas = new _params_and_initCanvasJsDefault.default('canvas');
+canvas.make_grid();
+// try get items in localeStorage
+let beginItem;
+try {
+  beginItem = _params_and_initGetItemJsDefault.default.getStartPlayer();
+} catch (e) {
+  console.error(e);
+  // default value :
+  beginItem = 'x';
+}
+let pathItems;
+try {
+  pathItems = _params_and_initGetItemJsDefault.default.img_according_localStorage();
+  ;
+} catch (err) {
+  console.error(err);
+  // default value :
+  pathItems = ["../img/true.png", "../img/false.png"];
+}
+// init data game with items in localStorage and instance of canvas :
+const game = new _params_and_initGameJsDefault.default(pathItems, canvas, beginItem, _params_and_initUtilitaryJsDefault.default);
+_params_and_initUtilitaryJsDefault.default.add_event(document.getElementById("options"), () => void window.location.assign(urls[0]));
+_params_and_initUtilitaryJsDefault.default.add_event(document.getElementById("reload"), () => void window.location.assign(urls[1]));
+_params_and_initUtilitaryJsDefault.default.add_event(canvas.canvas, e => void game.analyze_click_position(e, canvas.range));
