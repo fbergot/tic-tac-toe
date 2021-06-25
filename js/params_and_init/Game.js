@@ -1,6 +1,7 @@
 /**
- * init core for the game : (game state and all parameters for game)
- *  
+ * init core for the game : (game state and all parameters for game);
+ * 
+ *  ----------------------------------------------------Crée par florian Bergot----------------------------------------------------------------
  */
 export default class Game {
     /**
